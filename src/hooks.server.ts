@@ -3,9 +3,10 @@ import { redirect } from '@sveltejs/kit';
 
 export async function handle({ event, resolve }) {
 	// const user = event.locals.user;
-	const user = {
-		name: 'gideon'
-	}; // Assume user is stored in locals
+	const user = null;
+	// const user = {
+	// name: 'gideon'
+	// }; // Assume user is stored in locals
 
 	if (event.route.id === '/' && user) {
 		// Redirect home route to dashboard if user exists

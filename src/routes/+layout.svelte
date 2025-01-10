@@ -1,12 +1,8 @@
-<!-- src/routes/+layout.svelte -->
-<script>
+<script lang="ts">
 	import Header from '$lib/components/blocks/Header.svelte';
-
-	export let data;
+	import '../app.css';
+	let { children } = $props();
 </script>
 
-<main>
-	<Header />
-	<slot />
-	<!-- Render child pages here -->
-</main>
+<Header />
+{@render children()}

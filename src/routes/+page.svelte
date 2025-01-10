@@ -1,2 +1,11 @@
-<h1 class="text-white">Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<script>
+	import Hero from '$lib/components/blocks/Hero.svelte';
+	// import AccordionComp from '$lib/components/AccordionComp.svelte';
+
+	// import Accordion from '$lib/components/Accordion.svelte';
+	// import { Button } from '$lib/components/ui/button';
+</script>
+
+<div>
+	<Hero />
+</div>
